@@ -12,16 +12,49 @@
 
 + (NSNumber *)min:(NSArray<NSNumber *> *)arr
 {
-    NSInteger headIdx = 0;
-    NSInteger tailIdx = arr.count;
-    
-    while (headIdx + 1 != tailIdx) {
-        
-        
-        
+    if (!arr || !arr.count) {
+        return nil;
     }
     
-    return arr[tailIdx];
+    NSInteger headIdx = 0;
+    NSInteger tailIdx = arr.count - 1;
+    NSInteger midIdx = headIdx;
+    
+    while (arr[headIdx] >= arr[tailIdx]) {
+        
+        if (headIdx + 1 == tailIdx) {
+            return arr[tailIdx];
+            break;
+        }
+        
+        midIdx = (headIdx + tailIdx) / 2;
+        
+        if (arr[headIdx] == arr[tailIdx]
+            && arr[tailIdx] == arr[midIdx]) {
+            return [self MinOrder:arr];
+        }
+        
+        if (arr[midIdx] >= arr[headIdx]) {
+            headIdx = midIdx;
+        } else if (arr[midIdx] <= arr[tailIdx]) {
+            tailIdx = midIdx;
+        }
+    }
+    
+    return nil;
 }
+
++ (NSNumber *)MinOrder:(NSArray <NSNumber *>*)arr {
+    
+    NSNumber *result = arr.firstObject;
+    for (NSInteger idx = 1; idx < arr.count; idx++) {
+        
+        if (result >= arr[idx]) {
+            result = arr[idx];
+        }
+    }
+    return result;
+}
+
 
 @end

@@ -15,8 +15,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
-        NSLog(@"%@",[RotateArray min:@[@3,@4,@5,@1,@2]]);
-        
+        NSLog(@"test1-->%@",[RotateArray min:@[@3,@4,@5,@1,@2]]);
+        NSLog(@"test2-->%@",[RotateArray min:@[@1,@0,@1,@1,@1]]);
+
     }
     return 0;
 }
