@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43740BD4210CB24D0070D3DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43740BD3210CB24D0070D3DD /* main.m */; };
+		43764A552113F04800C6695B /* FindGreatestSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 43764A542113F04800C6695B /* FindGreatestSum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		43740BD0210CB24D0070D3DD /* problem31 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = problem31; sourceTree = BUILT_PRODUCTS_DIR; };
 		43740BD3210CB24D0070D3DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43764A532113F04800C6695B /* FindGreatestSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindGreatestSum.h; sourceTree = "<group>"; };
+		43764A542113F04800C6695B /* FindGreatestSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindGreatestSum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				43740BD3210CB24D0070D3DD /* main.m */,
+				43764A532113F04800C6695B /* FindGreatestSum.h */,
+				43764A542113F04800C6695B /* FindGreatestSum.m */,
 			);
 			path = problem31;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43740BD4210CB24D0070D3DD /* main.m in Sources */,
+				43764A552113F04800C6695B /* FindGreatestSum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

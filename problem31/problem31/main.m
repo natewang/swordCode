@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FindGreatestSum.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"%@", [FindGreatestSum findGreatestSumOfSubArrayWithDP:@[@1,@2,@3,@4]]);
     }
     return 0;
 }
