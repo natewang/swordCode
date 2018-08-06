@@ -1,18 +1,18 @@
 //
 //  main.m
-//  problem36
+//  problem38
 //
-//  Created by wangnate on 2018/8/5.
+//  Created by wangnate on 2018/8/6.
 //  Copyright © 2018年 wangnate. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "InversePairs.h"
+#import "TimesOfDigitInSortedArray.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"%@", [InversePairs getInversePairs:@[@7, @5, @6, @4]]);
+        NSLog(@"%d", [TimesOfDigitInSortedArray getNumberOfK:@[@1,@1,@2,@3] k:1]);
     }
     return 0;
 }
