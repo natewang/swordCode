@@ -1,18 +1,26 @@
 //
 //  main.m
-//  problem44
+//  problem46
 //
-//  Created by wangnate on 2018/8/7.
+//  Created by wangnate on 2018/8/10.
 //  Copyright © 2018年 wangnate. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "SortPoker.h"
+
+int sum = 0;
+
+BOOL summation(int n)
+{
+    sum += n;
+    return n-1 && summation(n-1);
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"%d", [SortPoker isContinuous:@[@1,@2,@4,@0,@0]]);
+        NSLog(@"Hello, World!");
     }
     return 0;
 }
